@@ -15,3 +15,104 @@ body{
     background-color: #eee;
     min-height: 100vh;
 }
+
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.name{
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.message{
+    background-color: white;
+    padding: 15px ;
+    margin: 15px 0px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.message span{
+    font-weight: bold;
+    color: slateblue;
+}
+.message span::before{
+    content: "[ ";
+}
+.message span::after{
+    content: "] ";
+}
+.start{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #009688;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.the-word{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px ;
+    color: var(--main-color);
+    /* بتمنع المستخدم من نسخ او لص الكلمة  */
+    user-select: none; 
+}
+.input{
+    margin: 15px 0px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 3px solid var(--main-color);
+    text-align: center;
+    font-size:20px ;
+    border-radius: 6px;
+    caret-color: blue;
+}
+.upcoming-words {
+    background-color: white;
+    margin: 15px 0;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.upcoming-words div {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+}
+.control {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+}
+.control span {
+    font-weight: bold;
+    color: #009688;
+}
+
+.finish {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+.finish .good {
+    color: var(--main-color);
+}
+.finish .bad {
+    color: red;
+}
